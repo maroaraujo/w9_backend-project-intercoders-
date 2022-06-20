@@ -1,50 +1,23 @@
 import express from "express";
-import logger from "morgan";
-import catsRouter from "./routes/cats.js";
-
-const PORT = process.env.PORT || "3001";
 const app = express();
+const PORT = process.env.port || 3001;
 
-app.use(logger("dev"));
+// import routes from route files
+import customerRouter from "./routes/customers.js";
+
+//unpack json
 app.use(express.json());
-app.use(express.static("public"));
 
-/** DO NOT CHANGE THIS ROUTE - it serves our front-end */
+app.use("/customers", customerRouter);
+
+// test route
 app.get("/", function (req, res) {
-  res.render("index", { title: "Cats" });
+  res.json({
+    success: true,
+    message: "Test route up and running!",
+  });
 });
 
-app.use("/api/cats", catsRouter);
-
-const cats = [
-  {
-    id: 1,
-    name: "Tony",
-    human: "Liz.K",
-    hobby: "cling",
-  },
-  {
-    id: 2,
-    name: "Poppy",
-    human: "Tim",
-    hobby: "screm",
-  },
-  {
-    id: 3,
-    name: "Narla",
-    human: "Mell",
-    hobby: "obstruct",
-  },
-];
-
-/* Your tasks for part 1: 🔻 
-- 👉 Add request handlers/routes for your API that will handle requests to the path "/api/cats" for all the 
-cats, providing the data in the cats array in this file. Test this in your browser.
-- 👉 Add code to also handle requests for a cat by id using params, and cats by name using a query. 
-Test this in your browser.
-- 👉 Test the form on the front-end here: http://localhost:3000
-*/
-
 app.listen(PORT, function () {
-  console.log(`Server listening on port: ${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });
