@@ -1,14 +1,14 @@
 import { query } from "../index.js";
 
-const sqlQuery = `CREATE TABLE IF NOT EXISTS cats(
+const sqlQuery = `CREATE TABLE IF NOT EXISTS users(
     id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-    name TEXT,
-    human TEXT,
-    hobby TEXT);`;
+    username TEXT,
+    password TEXT)`;
 
-async function createTable(){
-    const res = await query(sqlQuery);
-    console.log("Table was created");
-};
+async function createTable() {
+  console.log("Hello");
+  const res = await query(sqlQuery);
+  console.log("Table was created");
+}
 
 createTable();

@@ -1,14 +1,17 @@
 import express from "express";
+import cors from "cors";
+
 const app = express();
 const PORT = process.env.port || 3001;
 
 // import routes from route files
-import customerRouter from "./routes/customers.js";
+import userRouter from "./routes/users.js";
 
 //unpack json
 app.use(express.json());
+app.use(cors());
 
-app.use("/customers", customerRouter);
+app.use("/users", userRouter);
 
 // test route
 app.get("/", function (req, res) {
