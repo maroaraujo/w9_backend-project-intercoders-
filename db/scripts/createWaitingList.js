@@ -3,7 +3,8 @@ import { query } from "../index.js";
 const sqlQuery = `CREATE TABLE IF NOT EXISTS waitingList(
     id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
     name TEXT,
-    coursename TEXT)`;
+    coursename TEXT,
+    )`;
 
 async function waitingList() {
   console.log("Hello");

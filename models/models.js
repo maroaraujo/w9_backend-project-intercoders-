@@ -51,3 +51,20 @@ export async function getWaitingListByCourse(param) {
   const display = response.rows;
   return display;
 }
+
+export async function addToCourse(body) {
+  const queryText = `INSERT INTO courselist (coursename) 
+  VALUES ('${body.coursename}')`;
+  const rows = await query(queryText);
+
+  console.log("rows" + rows);
+  return rows;
+}
+
+export async function getCourse() {
+  console.log("b4 await");
+  const response = await query("SELECT * FROM courselist;");
+  console.log("after await");
+  const display = response.rows;
+  return display;
+}
