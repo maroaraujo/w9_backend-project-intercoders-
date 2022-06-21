@@ -26,3 +26,12 @@ export async function getUsers() {
   const display = response.rows;
   return display;
 }
+
+export async function addToList(body, param) {
+  const queryText = `INSERT INTO waitinglist (name, coursename) 
+  VALUES ('${body.name}', '${param}')`;
+  const rows = await query(queryText);
+
+  console.log("rows" + rows);
+  return rows;
+}
