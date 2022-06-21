@@ -46,7 +46,9 @@ export async function getWaitingList() {
 
 export async function getWaitingListByCourse(param) {
   console.log("b4 await");
-  const response = await query(`SELECT * FROM waitinglist WHERE coursename = '${param}';`);
+  const response = await query(
+    `SELECT * FROM waitinglist WHERE coursename = '${param}';`
+  );
   console.log("after await " + param);
   const display = response.rows;
   return display;
@@ -84,4 +86,14 @@ export async function addToAnnouncement(body) {
 
   console.log("rows" + rows);
   return rows;
+}
+
+export async function deleteUserFromWaitingList(body, param) {
+  console.log("b4 await");
+  const response = await query(
+    `DELETE FROM waitinglist WHERE name= '${body.name}' AND coursename = '${param}';`
+  );
+  console.log("after await " + param + " " + body.name);
+  const display = response.rows;
+  return display;
 }

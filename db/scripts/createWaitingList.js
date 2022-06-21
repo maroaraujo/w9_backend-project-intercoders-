@@ -1,6 +1,6 @@
 import { query } from "../index.js";
 
-const sqlQuery = `CREATE TABLE IF NOT EXISTS waitingList(
+const sqlQuery = `CREATE TABLE IF NOT EXISTS waitinglist(
     id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
     name TEXT,
     coursename TEXT,
