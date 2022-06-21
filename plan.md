@@ -10,15 +10,10 @@ Create a post request to that waiting list table --DONE
   -- in models.js create a getCourse and addtoCourse function
   -- update the package.json file with the db function names
   -- in Postman get and post requests
-  Create an Announcement table
-  --create two routes
-      -- write the functions in the models folder
-      -- update the router file with the right routes
-      -- update package.json file
-      -- create
 
--- Create an announcement table (script in the db folder)
--- update package.json file to run the script
+
+-- Create an announcement table (script in the db folder)--DONE
+-- update package.json file to run the script --DONE
 
 -- Create Announcement router (app.js) then import from routers folder
 

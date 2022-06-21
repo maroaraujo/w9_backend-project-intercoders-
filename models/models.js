@@ -68,3 +68,20 @@ export async function getCourse() {
   const display = response.rows;
   return display;
 }
+
+export async function getAnnouncement() {
+  console.log("b4 await");
+  const response = await query("SELECT * FROM announcementlist;");
+  console.log("after await");
+  const display = response.rows;
+  return display;
+}
+
+export async function addToAnnouncement(body) {
+  const queryText = `INSERT INTO announcementlist (id, topic, student, date, time ) 
+  VALUES ('${body.id}', '${body.topic}', '${body.student}', '${body.date}','${body.time}')`;
+  const rows = await query(queryText);
+
+  console.log("rows" + rows);
+  return rows;
+}
