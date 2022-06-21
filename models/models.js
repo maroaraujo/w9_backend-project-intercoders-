@@ -35,3 +35,19 @@ export async function addToList(body, param) {
   console.log("rows" + rows);
   return rows;
 }
+
+export async function getWaitingList() {
+  console.log("b4 await");
+  const response = await query("SELECT * FROM waitinglist;");
+  console.log("after await");
+  const display = response.rows;
+  return display;
+}
+
+export async function getWaitingListByCourse(param) {
+  console.log("b4 await");
+  const response = await query(`SELECT * FROM waitinglist WHERE coursename = '${param}';`);
+  console.log("after await " + param);
+  const display = response.rows;
+  return display;
+}
