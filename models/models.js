@@ -27,9 +27,9 @@ export async function getUsers() {
   return display;
 }
 
-export async function addToList(body, param) {
+export async function addToList(body) {
   const queryText = `INSERT INTO waitinglist (name, coursename) 
-  VALUES ('${body.name}', '${param}')`;
+  VALUES ('${body.name}', '${body.coursename}')`;
   const rows = await query(queryText);
 
   console.log("rows" + rows);
@@ -88,12 +88,12 @@ export async function addToAnnouncement(body) {
   return rows;
 }
 
-export async function deleteUserFromWaitingList(body, param) {
+export async function deleteUserFromWaitingList(body) {
   console.log("b4 await");
   const response = await query(
-    `DELETE FROM waitinglist WHERE name= '${body.name}' AND coursename = '${param}';`
+    `DELETE FROM waitinglist WHERE name= '${body.name}' AND coursename = '${body.coursename}';`
   );
-  console.log("after await " + param + " " + body.name);
+  console.log("after await " + body.coursename + " " + body.name);
   const display = response.rows;
   return display;
 }

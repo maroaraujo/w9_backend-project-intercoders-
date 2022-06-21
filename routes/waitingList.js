@@ -9,15 +9,14 @@ import {
   deleteUserFromWaitingList,
 } from "../models/models.js";
 
-router.post("/join/:id", async function (req, res) {
+router.post("/", async function (req, res) {
   const body = req.body;
-  const param = req.params.id;
   console.log(body);
   console.log("above is body");
-  let data = await addToList(body, param);
+  let data = await addToList(body);
   res.json({
     success: true,
-    payload: "The new member has been added to the list",
+    payload: "The student was added to the list",
   });
 });
 
@@ -34,12 +33,12 @@ router.get("/:id", async function (req, res) {
   res.json({ success: true, payload: result });
 });
 
-router.delete("/:id", async function (req, res) {
-  const param = req.params.id;
-  const body = req.body;
-  console.log("waiting list " + param);
-  const result = await deleteUserFromWaitingList(body, param);
-  res.json({ success: true, payload: result });
+router.delete("/", async function (req, res) {
+  const reqBody = req.body;
+  console.log("waiting list ");
+  const result = await deleteUserFromWaitingList(reqBody);
+  //res.send(req);
+  res.json({ success: true, payload: "The student was deleted from the list" });
 });
 
 export default router;
