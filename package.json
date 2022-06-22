@@ -15,6 +15,11 @@
     "db:deleteTable": "node -r dotenv/config ./db/scripts/DeleteTables.js",
     "db:resetAnnouncementTable": "node -r dotenv/config ./db/scripts/resetAnnouncementTable.js"
   },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+    ],
   "dependencies": {
     "cors": "^2.8.5",
     "express": "~4.16.1",
