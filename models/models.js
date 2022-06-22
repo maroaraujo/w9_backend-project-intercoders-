@@ -3,8 +3,8 @@ import { query } from "../db/index.js";
 
 export async function createUser(body) {
   const queryText = `INSERT INTO users (username, password) 
-  VALUES ('${body.username}', '${body.password}')`;
-  const rows = await query(queryText);
+  VALUES ($1, $2);`;
+  const rows = await query(queryText, [body.username, body.password]);
 
   console.log("rows" + rows);
   return rows;
@@ -60,8 +60,8 @@ export async function getWaitingListByCourse(param) {
 
 export async function addToCourse(body) {
   const queryText = `INSERT INTO course (keycourse) 
-  VALUES ('${body.keycourse}')`;
-  const rows = await query(queryText);
+  VALUES ($1);`;
+  const rows = await query(queryText, [body.keycourse]);
 
   console.log("rows" + rows);
   return rows;
@@ -85,8 +85,8 @@ export async function getAnnouncement() {
 
 export async function addToAnnouncement(body) {
   const queryText = `INSERT INTO announcementlist (id, keycourse, volunteername, date, time ) 
-  VALUES ('${body.id}', '${body.keycourse}', '${body.volunteername}', '${body.date}','${body.time}')`;
-  const rows = await query(queryText);
+  VALUES ($1, $2, $3, $4, $5);`;
+  const rows = await query(queryText,[body.id, body.keycourse, body.volunteername, body.date, body.time]);
 
   console.log("rows" + rows);
   return rows;
