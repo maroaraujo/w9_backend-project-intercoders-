@@ -30,12 +30,11 @@ export async function getUsers() {
 export async function addToList(body) {
   console.log("body ", body.studentname);
   if (body.studentname === undefined || body.keycourse === undefined) {
-    console.log("error");
+    console.log("Null value was passed");
   } else {
-    const queryText = `INSERT INTO waitinglist (name, coursename) 
+    const queryText = `INSERT INTO waitinglist (studentname, keycourse) 
   VALUES ($1, $2);`;
     const rows = await query(queryText, [body.studentname, body.keycourse]);
-
     console.log("rows" + rows);
     return rows;
   }
@@ -52,7 +51,7 @@ export async function getWaitingList() {
 export async function getWaitingListByCourse(param) {
   console.log("b4 await");
   const response = await query(
-    `SELECT * FROM waitinglist WHERE coursename = '${param}';`
+    `SELECT * FROM waitinglist WHERE keycourse = '${param}';`
   );
   console.log("after await " + param);
   const display = response.rows;
@@ -60,8 +59,8 @@ export async function getWaitingListByCourse(param) {
 }
 
 export async function addToCourse(body) {
-  const queryText = `INSERT INTO courselist (coursename) 
-  VALUES ('${body.course}')`;
+  const queryText = `INSERT INTO course (keycourse) 
+  VALUES ('${body.keycourse}')`;
   const rows = await query(queryText);
 
   console.log("rows" + rows);
@@ -70,7 +69,7 @@ export async function addToCourse(body) {
 
 export async function getCourse() {
   console.log("b4 await");
-  const response = await query("SELECT * FROM courselist;");
+  const response = await query("SELECT * FROM course;");
   console.log("after await");
   const display = response.rows;
   return display;
@@ -85,7 +84,7 @@ export async function getAnnouncement() {
 }
 
 export async function addToAnnouncement(body) {
-  const queryText = `INSERT INTO announcementlist (id, topic, student, date, time ) 
+  const queryText = `INSERT INTO announcementlist (id, keycourse, volunteername, date, time ) 
   VALUES ('${body.id}', '${body.keycourse}', '${body.volunteername}', '${body.date}','${body.time}')`;
   const rows = await query(queryText);
 
