@@ -28,13 +28,16 @@ export async function getUsers() {
 }
 
 export async function addToList(body) {
-  const queryText = `INSERT INTO waitinglist (name, coursename) 
+  console.log("body ", body.studentname);
+  if (body.studentname === undefined || body.keycourse === undefined) {
+    console.log("Null value was passed");
+  } else {
+    const queryText = `INSERT INTO waitinglist (name, coursename)
   VALUES ($1, $2);`;
-  const rows = await query(queryText, [body.studentname, body.keycourse]);
-
-  console.log("rows" + rows);
-  return rows;
-}
+    const rows = await query(queryText, [body.studentname, body.keycourse]);
+    console.log("rows" + rows);
+    return rows;
+  }}
 
 export async function getWaitingList() {
   console.log("b4 await");
