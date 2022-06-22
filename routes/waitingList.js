@@ -39,7 +39,8 @@ router.get("/:id", async function (req, res) {
 
 router.delete("/", async function (req, res) {
   const reqBody = req.body;
-  console.log("waiting list ");
+  //console.log("waiting list ");
+  console.log("deleted student", req)
   const result = await deleteUserFromWaitingList(reqBody);
   //res.send(req);
   res.json({ success: true, payload: "The student was deleted from the list" });
