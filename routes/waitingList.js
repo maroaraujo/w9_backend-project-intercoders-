@@ -1,4 +1,5 @@
 import express from "express";
+import { closeComplete } from "pg-protocol/dist/messages.js";
 const router = express.Router();
 router.use(express.json());
 
@@ -13,11 +14,14 @@ router.post("/", async function (req, res) {
   const body = req.body;
   console.log(body);
   console.log("above is body");
-  let data = await addToList(body);
-  res.json({
-    success: true,
-    payload: "The student was added to the list",
-  });
+
+  if (body.studentname !== null) {
+    let data = await addToList(body);
+    res.json({
+      success: true,
+      payload: "The student was added to the list",
+    });
+  } else console.log("it was null");
 });
 
 router.get("/", async function (req, res) {
