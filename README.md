@@ -1,22 +1,37 @@
-# National Bootcamp - Week Nine Project Brief
+# CODECLUB APP
 
-For your project, you’ll be using what you’ve learned on the course so far to try and improve the lives of your users. In this case, the users will be close to home: bootcampers!
+## About the App
 
-To do this, you’ll need to take the time to understand your user (a bootcamper), their experiences, and their problems. Specifically, it might be good to focus on how to enhance the remote experience of a bootcamper, or what can help them with the vast amount of learning there is to do as a new developer. What do they need? What problem might they have that your application could solve for them? How can you get into the mindset of your user and keep them at the centre of your problem-solving?
+CodeClub App is the place where all the School of Code students can come together and study together!
+School of Code students can choose the subject they would like to revise and register their interest on the site. If they would like to guide others on their learning journey, they can achieve this goal by adding their name and availability on the “Volunteer to help” section.  
+When students visit the website, they can easily see who is interested in a specific subject and who might be available to offer some help on that specific subject. If there are no volunteers to help, the students still can communicate their learning needs with their peers who are interested in the same subject and arrange an agreeable time and date that suits them. 
 
-The high level outcomes from this project should be:
+The meetings will take place on the Main Zoom Channel rooms (if the permission is granted by the school) or individually arranged Google Meet Rooms. The meeting times will always be after School of Code, starting at 17:30 and the days include every weekday apart from Wednesdays. The pupils will be always more than welcome to arrange their own meeting times and spaces as well.
 
-- A minimum viable product (MVP) showcasing an innovative full stack application which meets the user need you’ve identified
-- A presentation, complete with how you worked as a team and a demonstration of the project
+How the App Started
+---
+The original idea was born after various discussions between four School of Code students came together to discuss and find solutions to the problems the students might be facing in their day-to-day life within an intense learning environment. We quickly realised that it was very time consuming to arrange a date and place for the 150 students to meet, if they felt they needed extra time to understand a subject. 
+With this app, we hope that all the students can find people who are at the same place in their journey quickly and efficiently while supporting each other in their struggles.
 
-Your project application might include the following:
+What does this repository contain?
+---
+We have used various platforms in our repo. These include:
+React.js
+Node.js
+PostgreSQL
+Heroku
+Postman API
 
-- Include a user experience created in React
-- Build a REST API which is used by your front-end
-- Be supported by a Postgresql database with multiple tables
-- Be built and managed in an agile way
-- Utilise testing for ensuring robust code
+Available Documentation for Setting Up 
+---
+React.js : ( https://reactjs.org/docs/create-a-new-react-app.html )
 
-Remember, you only have a few days to code a solution, so being agile is key. That means brainstorming what you want to build, and working in sprints to deliver value each time. After each sprint, you can reassess and either continue on course or iterate towards a better solution. Have a plan which is incremental steps, rather than all or nothing.
+Node.js :  ( https://nodejs.org/en/ )
+          ( https://nodejs.org/en/docs/guides/getting-started-guide/ )
 
-Click the link to see the [Project Guidelines](https://github.com/SchoolOfCode/project-guidelines/blob/master/project-week.md)
+PostgreSQL : (https://www.postgresql.org/)
+
+Heroku : (https://id.heroku.com/login)
+
+Postman API :  (https://www.postman.com/)
+
