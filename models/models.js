@@ -29,8 +29,8 @@ export async function getUsers() {
 
 export async function addToList(body) {
   const queryText = `INSERT INTO waitinglist (name, coursename) 
-  VALUES ('${body.name}', '${body.coursename}')`;
-  const rows = await query(queryText);
+  VALUES ($1, $2);`;
+  const rows = await query(queryText, [body.studentname, body.keycourse]);
 
   console.log("rows" + rows);
   return rows;
@@ -56,7 +56,7 @@ export async function getWaitingListByCourse(param) {
 
 export async function addToCourse(body) {
   const queryText = `INSERT INTO courselist (coursename) 
-  VALUES ('${body.coursename}')`;
+  VALUES ('${body.course}')`;
   const rows = await query(queryText);
 
   console.log("rows" + rows);
@@ -81,7 +81,7 @@ export async function getAnnouncement() {
 
 export async function addToAnnouncement(body) {
   const queryText = `INSERT INTO announcementlist (id, topic, student, date, time ) 
-  VALUES ('${body.id}', '${body.topic}', '${body.student}', '${body.date}','${body.time}')`;
+  VALUES ('${body.id}', '${body.keycourse}', '${body.volunteername}', '${body.date}','${body.time}')`;
   const rows = await query(queryText);
 
   console.log("rows" + rows);
@@ -91,9 +91,9 @@ export async function addToAnnouncement(body) {
 export async function deleteUserFromWaitingList(body) {
   console.log("b4 await");
   const response = await query(
-    `DELETE FROM waitinglist WHERE name= '${body.name}' AND coursename = '${body.coursename}';`
+    `DELETE FROM waitinglist WHERE name= '${body.studentname}' AND coursename = '${body.keycourse}';`
   );
-  console.log("after await " + body.coursename + " " + body.name);
+  console.log("after await " + body.studentname + " " + body.keycourse);
   const display = response.rows;
   return display;
 }
