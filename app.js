@@ -2,11 +2,11 @@ import express from "express";
 import cors from "cors";
 
 const app = express();
-const PORT = process.env.port || 3001;
+const PORT = process.env.port || 3002;
 
 // import routes from route files
 import userRouter from "./routes/users.js";
-import waitingListRouter from "./routes/waitingList.js"; 
+import waitingListRouter from "./routes/waitingList.js";
 import courseRouter from "./routes/course.js";
 import announcementRouter from "./routes/announcement.js";
 
@@ -26,8 +26,6 @@ app.get("/", function (req, res) {
     message: "Test route up and running!",
   });
 });
-
-
 
 app.listen(PORT, function () {
   console.log(`Server is running on port ${PORT}`);

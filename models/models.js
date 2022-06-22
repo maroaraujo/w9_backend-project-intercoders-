@@ -28,12 +28,17 @@ export async function getUsers() {
 }
 
 export async function addToList(body) {
-  const queryText = `INSERT INTO waitinglist (name, coursename) 
+  console.log("body ", body.studentname);
+  if (body.studentname === undefined || body.keycourse === undefined) {
+    console.log("error");
+  } else {
+    const queryText = `INSERT INTO waitinglist (name, coursename) 
   VALUES ($1, $2);`;
-  const rows = await query(queryText, [body.studentname, body.keycourse]);
+    const rows = await query(queryText, [body.studentname, body.keycourse]);
 
-  console.log("rows" + rows);
-  return rows;
+    console.log("rows" + rows);
+    return rows;
+  }
 }
 
 export async function getWaitingList() {
