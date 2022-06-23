@@ -46,6 +46,7 @@ The APIs aim to adhere to RESTful best practice. Here are the routes currently i
 | DELETE | /waitinglist |	Delete student from the waiting list | {studentname, keycourse}	| {success: boolean, payload: string}	|
 | GET |	/announcement |	List every announcement | |  {success: boolean, payload: [{index, id, keycourse, volunteername, date, time}]} |
 | POST |	/announcement |	Create a new announcement | {id, keycourse, volunteername, date, time}	| {success: boolean, payload: string}|
+| DELETE |	/announcement |	Delete an announcement | {keycourse, volunteername, date}	| {success: boolean, payload: string}|
 | GET	| /course |	List every courses | | {success: boolean, payload: [{id, course}]} |
 | POST | /course | Create a new course category | {course}	| {success: boolean,   payload: string} |	
 
