@@ -2,17 +2,24 @@ import express from "express";
 import cors from "cors";
 
 const app = express();
-const PORT = process.env.port || 3001;
+//const PORT = process.env.port || 3002;
 
 // import routes from route files
 import userRouter from "./routes/users.js";
-import waitingListRouter from "./routes/waitingList.js"; 
+import waitingListRouter from "./routes/waitingList.js";
 import courseRouter from "./routes/course.js";
 import announcementRouter from "./routes/announcement.js";
 
 //unpack json
 app.use(express.json());
-app.use(cors());
+//app.use(cors());
+const corsOptions = {
+  origin: "http://localhost:3000",
+  credentials: true, //access-control-allow-credentials:true
+  optionSuccessStatus: 200,
+};
+app.use(cors(corsOptions));
+
 
 app.use("/users", userRouter);
 app.use("/waitinglist", waitingListRouter);
@@ -27,8 +34,6 @@ app.get("/", function (req, res) {
   });
 });
 
-
-
-app.listen(PORT, function () {
-  console.log(`Server is running on port ${PORT}`);
+app.listen(process.env.PORT || 3001, function () {
+  console.log(`Server is running`);
 });

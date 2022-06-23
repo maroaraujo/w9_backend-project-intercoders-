@@ -15,13 +15,11 @@ router.post("/", async function (req, res) {
   console.log(body);
   console.log("above is body");
 
-  if (body.studentname !== null) {
-    let data = await addToList(body);
-    res.json({
-      success: true,
-      payload: "The student was added to the list",
-    });
-  } else console.log("it was null");
+  let data = await addToList(body);
+  res.json({
+    success: true,
+    payload: "The student was added to the list",
+  });
 });
 
 router.get("/", async function (req, res) {
