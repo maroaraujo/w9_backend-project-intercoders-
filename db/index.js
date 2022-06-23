@@ -6,7 +6,7 @@ const pool = new pg.Pool({
   database: "d2e0f5s9m98e3g",
   password: "2d9bb863c132d4100fd2a9e12e2aab38c72969740e019440060213c17952f391",
   port: "5432",
-  //ssl: { rejectUnauthorized: false },
+  ssl: { rejectUnauthorized: false },
 });
 
 export function query(text, params, callback) {
