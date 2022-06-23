@@ -15,19 +15,19 @@ With this app, we hope that all the students can find people who are at the same
 
 ## How the APP works (beta version)
 
-1. STUDENTS INPUT
+1. STUDENTS INPUT.  
 Students put their names on the subject they want to recap
 
-2. LIST OF STUDENTS
+2. LIST OF STUDENTS.  
 All students can see who have the same subject interest, and can either contact each other (on slack) or organise a session which everyone could see it and participate. 
 
-3. VOLUNTEERS INPUT
+3. VOLUNTEERS INPUT.  
 Students can volunteer themselves to organise a session to help or discuss a subject, they put the names and their available days. 
 
-4. SESSIONS ANNOUNCEMENTS
+4. SESSIONS ANNOUNCEMENTS.  
 Once the volunteer submit, a card is going to appears on the announcement board
 
-5. ALL THE DATA WOULD 
+5. ALL THE DATA WOULD.   
 All data would be erased on saturday night, for the next week sessions and for new students list.
 
 ## Technologies and libraries used in this repository:
