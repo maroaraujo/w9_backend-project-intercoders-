@@ -1,6 +1,6 @@
 import pg from "pg";
 
-const pool = new pg.Pool({
+export const pool = new pg.Pool({
   user: "gtcmpufwzdliky",
   host: "ec2-34-247-72-29.eu-west-1.compute.amazonaws.com",
   database: "d2e0f5s9m98e3g",
