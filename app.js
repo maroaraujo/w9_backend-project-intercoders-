@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 
 const app = express();
-const PORT = process.env.port || 3002;
+//const PORT = process.env.port || 3002;
 
 // import routes from route files
 import userRouter from "./routes/users.js";
@@ -27,6 +27,6 @@ app.get("/", function (req, res) {
   });
 });
 
-app.listen(PORT, function () {
-  console.log(`Server is running on port ${PORT}`);
+app.listen(process.env.PORT || 5000, function () {
+  console.log(`Server is running`);
 });

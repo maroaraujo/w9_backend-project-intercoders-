@@ -77,16 +77,22 @@ export async function getCourse() {
 
 export async function getAnnouncement() {
   console.log("b4 await");
-  const response = await query("SELECT * FROM announcementlist;");
+  const response = await query("SELECT * FROM announcement;");
   console.log("after await");
   const display = response.rows;
   return display;
 }
 
 export async function addToAnnouncement(body) {
-  const queryText = `INSERT INTO announcementlist (id, keycourse, volunteername, date, time ) 
+  const queryText = `INSERT INTO announcement (id, keycourse, volunteername, date, time ) 
   VALUES ($1, $2, $3, $4, $5);`;
-  const rows = await query(queryText,[body.id, body.keycourse, body.volunteername, body.date, body.time]);
+  const rows = await query(queryText, [
+    body.id,
+    body.keycourse,
+    body.volunteername,
+    body.date,
+    body.time,
+  ]);
 
   console.log("rows" + rows);
   return rows;
