@@ -51,7 +51,8 @@ We have the backend of our application in this repository.
  - **version1**: This branch was intended as a temporary location of a working API which still used the previous database structure.
 
 ## API Routes
-The APIs aim to adhere to RESTful best practice. Here are the routes currently implemented.    
+The APIs aim to adhere to RESTful best practice. Here are the routes currently implemented. The API is currently hosted on Heroku.    
+Live demo is available: https://intercoders.herokuapp.com/
 
 | Method | Path | Role | Expected props | Response |
 |---|---|---|---|--|
