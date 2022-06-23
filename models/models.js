@@ -33,14 +33,15 @@ export async function addToList(body) {
   if (body.studentname === undefined || body.keycourse === undefined) {
     console.log("Null value was passed");
   } else {
+
     const queryText = `INSERT INTO waitinglist (studentname, keycourse) 
+
   VALUES ($1, $2);`;
     const rows = await query(queryText, [body.studentname, body.keycourse]);
     console.log("rows" + rows);
     return rows;
   }
 }
-
 
 export async function getWaitingList() {
   console.log("b4 await");
@@ -96,7 +97,7 @@ export async function addToAnnouncement(body) {
     body.time,
   ]);
 
-  console.log("rows" + rows);
+  console.log("rows", rows);
   return rows;
 }
 
