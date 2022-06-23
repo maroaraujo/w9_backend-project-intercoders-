@@ -10,7 +10,6 @@ export async function createUser(body) {
   return rows;
 }
 
-
 export async function login(body) {
   console.log("before query " + body.username);
   const queryText = `SELECT * FROM users WHERE username = ($1) AND password = ($2);`;
@@ -33,7 +32,6 @@ export async function addToList(body) {
   if (body.studentname === undefined || body.keycourse === undefined) {
     console.log("Null value was passed");
   } else {
-
     const queryText = `INSERT INTO waitinglist (studentname, keycourse) 
 
   VALUES ($1, $2);`;
@@ -54,7 +52,8 @@ export async function getWaitingList() {
 export async function getWaitingListByCourse(param) {
   console.log("b4 await");
   const response = await query(
-    `SELECT * FROM waitinglist WHERE keycourse = ($1);`, [param]
+    `SELECT * FROM waitinglist WHERE keycourse = ($1);`,
+    [param]
   );
   console.log("after await " + param);
   const display = response.rows;
@@ -104,10 +103,22 @@ export async function addToAnnouncement(body) {
 export async function deleteUserFromWaitingList(body) {
   console.log("Delete ", body);
   const response = await query(
-    `DELETE FROM waitinglist WHERE studentname= ($1) AND keycourse = ($2) RETURNING *;`, 
+    `DELETE FROM waitinglist WHERE studentname= ($1) AND keycourse = ($2) RETURNING *;`,
     [body.studentname, body.keycourse]
   );
   console.log("after await " + body.studentname + " " + body.keycourse);
+  const display = response.rows;
+  console.log("This is returning ", display);
+  return display;
+}
+
+export async function deleteUserFromAnnouncement(body) {
+  console.log("Delete ", body);
+  const response = await query(
+    `DELETE FROM announcement WHERE keycourse = ($1) AND volunteername = ($2) AND Tuesday = ($3) RETURNING *;`,
+    [body.keycourse, body.volunteername, body.date]
+  );
+  console.log("after await ", body.volunteername, body.keycourse, body.date);
   const display = response.rows;
   console.log("This is returning ", display);
   return display;
