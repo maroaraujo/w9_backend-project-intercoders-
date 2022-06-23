@@ -101,9 +101,10 @@ export async function addToAnnouncement(body) {
 export async function deleteUserFromWaitingList(body) {
   console.log("b4 await");
   const response = await query(
-    `DELETE FROM waitinglist WHERE studentname= '${body.studentname}' AND keycourse = '${body.keycourse}';`
+    `DELETE FROM waitinglist WHERE studentname= '${body.studentname}' AND keycourse = '${body.keycourse}' RETURNING *;`
   );
   console.log("after await " + body.studentname + " " + body.keycourse);
   const display = response.rows;
+  console.log("This is returning ", display);
   return display;
 }
