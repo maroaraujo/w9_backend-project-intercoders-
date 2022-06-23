@@ -9,7 +9,7 @@ router.post("/register", async function (req, res) {
   console.log(body);
   console.log("above is body");
   let data = await createUser(body);
-  res.json({ success: true, payload: "The new customer was added" });
+  res.json({ success: true, payload: "The new user was added" });
 });
 
 router.post("/login", async function (req, res) {
@@ -22,13 +22,6 @@ router.post("/login", async function (req, res) {
 
 router.get("/", async function (req, res) {
   console.log(req.query.search);
-  if (req.query.search !== undefined) {
-    console.log("in if");
-    console.log(req.query.search);
-    const result = await getCustomerSearch(req.query.search);
-    res.json({ success: true, payload: result });
-    return;
-  }
   const result = await getUsers();
   res.json({ success: true, payload: result });
 });
