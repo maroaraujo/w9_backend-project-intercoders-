@@ -86,7 +86,7 @@ export async function addToAnnouncement(body) {
   const queryText = `INSERT INTO announcementlist (id, topic, student, date, time ) 
   VALUES ('${body.id}', '${body.keycourse}', '${body.volunteername}', '${body.date}','${body.time}')`;
   const rows = await query(queryText);
-
+  console.log(body)
   console.log("rows" + rows);
   return rows;
 }
