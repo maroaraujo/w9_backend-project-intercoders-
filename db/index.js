@@ -2,7 +2,7 @@ import pg from "pg";
 
 const pool = new pg.Pool({
   user: "gtcmpufwzdliky",
-  host: "ec2-34-242-8-97.eu-west-1.compute.amazonaws.com",
+  host: "ec2-34-247-72-29.eu-west-1.compute.amazonaws.com",
   database: "d2e0f5s9m98e3g",
   password: "2d9bb863c132d4100fd2a9e12e2aab38c72969740e019440060213c17952f391",
   port: "5432",
