@@ -10,11 +10,12 @@ export async function createUser(body) {
   return rows;
 }
 
+
 export async function login(body) {
   console.log("before query " + body.username);
-  const queryText = `SELECT * FROM users WHERE username = '${body.username}' AND password = '${body.password}'`;
+  const queryText = `SELECT * FROM users WHERE username = ($1) AND password = ($2);`;
   console.log(queryText);
-  const { rows } = await query(queryText);
+  const { rows } = await query(queryText, [body.username, body.password]);
   console.log("rows" + rows);
   return rows;
 }
@@ -40,6 +41,7 @@ export async function addToList(body) {
   }
 }
 
+
 export async function getWaitingList() {
   console.log("b4 await");
   const response = await query("SELECT * FROM waitinglist;");
@@ -51,7 +53,7 @@ export async function getWaitingList() {
 export async function getWaitingListByCourse(param) {
   console.log("b4 await");
   const response = await query(
-    `SELECT * FROM waitinglist WHERE keycourse = '${param}';`
+    `SELECT * FROM waitinglist WHERE keycourse = ($1);`, [param]
   );
   console.log("after await " + param);
   const display = response.rows;
@@ -101,7 +103,8 @@ export async function addToAnnouncement(body) {
 export async function deleteUserFromWaitingList(body) {
   console.log("Delete ", body);
   const response = await query(
-    `DELETE FROM waitinglist WHERE studentname= '${body.studentname}' AND keycourse = '${body.keycourse}' RETURNING *;`
+    `DELETE FROM waitinglist WHERE studentname= ($1) AND keycourse = ($2) RETURNING *;`, 
+    [body.studentname, body.keycourse]
   );
   console.log("after await " + body.studentname + " " + body.keycourse);
   const display = response.rows;
