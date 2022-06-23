@@ -13,7 +13,22 @@ The meetings will take place on the Main Zoom Channel rooms (if the permission i
 The original idea was born after various discussions between four School of Code students came together to discuss and find solutions to the problems the students might be facing in their day-to-day life within an intense learning environment. We quickly realised that it was very time consuming to arrange a date and place for the 150 students to meet, if they felt they needed extra time to understand a subject. 
 With this app, we hope that all the students can find people who are at the same place in their journey quickly and efficiently while supporting each other in their struggles.
 
+## How the APP works (beta version)
 
+1. STUDENTS INPUT
+Students put their names on the subject they want to recap
+
+2. LIST OF STUDENTS
+All students can see who have the same subject interest, and can either contact each other (on slack) or organise a session which everyone could see it and participate. 
+
+3. VOLUNTEERS INPUT
+Students can volunteer themselves to organise a session to help or discuss a subject, they put the names and their available days. 
+
+4. SESSIONS ANNOUNCEMENTS
+Once the volunteer submit, a card is going to appears on the announcement board
+
+5. ALL THE DATA WOULD 
+All data would be erased on saturday night, for the next week sessions and for new students list.
 
 ## Technologies and libraries used in this repository:
 
