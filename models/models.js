@@ -115,7 +115,7 @@ export async function deleteUserFromWaitingList(body) {
 export async function deleteUserFromAnnouncement(body) {
   console.log("Delete ", body);
   const response = await query(
-    `DELETE FROM announcement WHERE keycourse = ($1) AND volunteername = ($2) AND Tuesday = ($3) RETURNING *;`,
+    `DELETE FROM announcement WHERE keycourse = ($1) AND volunteername = ($2) AND date = ($3);`,
     [body.keycourse, body.volunteername, body.date]
   );
   console.log("after await ", body.volunteername, body.keycourse, body.date);
