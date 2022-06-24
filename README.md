@@ -65,6 +65,8 @@ Live demo is available: https://intercoders.herokuapp.com/
 | DELETE |	/announcement |	Delete an announcement | {keycourse, volunteername, date}	| {success: boolean, payload: string}|
 | GET	| /course |	List every courses | | {success: boolean, payload: [{id, course}]} |
 | POST | /course | Create a new course category | {course}	| {success: boolean,   payload: string} |	
+| POST | /users/login | Login for users | {username, pqssword}	| {success: boolean, payload: [{id, username, course}]} |
+| POST | /users/register | Registering a new student | {username, password}	| {success: boolean, payload: [{id, username, course}]} |
 
 
 Available Documentation for Setting Up 
