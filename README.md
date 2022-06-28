@@ -36,14 +36,14 @@ Heroku : (https://id.heroku.com/login)
 Postman API :  (https://www.postman.com/)
 
 Lessons Learned:
-
+--
 What did you learn while building this project?
 
---The first lesson learned was about the communication throught the project, we were not communicating as much as needed on the first day and that set us back a few times when we were both doing the same thing again.
+1. The first lesson learned was about the communication throught the project, we were not communicating as much as needed on the first day and that set us back a few times when we were both doing the same thing again.
 
--- Second Lesson would be about how important it is to understand react tree components and how the props are passed from parents to children. We struglled to pass the props a few times in our project and that hold our progression back.
+2. Second Lesson would be about how important it is to understand react tree components and how the props are passed from parents to children. We struglled to pass the props a few times in our project and that hold our progression back.
 
--- How to filter the information on the backend is really important so we don't need to do it on thr frontend
+3. How to filter the information on the backend is really important so we don't need to do it on thr frontend
 
 What challenges did you face and how did you overcome them?
 
