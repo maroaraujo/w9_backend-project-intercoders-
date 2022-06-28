@@ -13,6 +13,33 @@ The meetings will take place on the Main Zoom Channel rooms (if the permission i
 The original idea was born after various discussions between four School of Code students came together to discuss and find solutions to the problems the students might be facing in their day-to-day life within an intense learning environment. We quickly realised that it was very time consuming to arrange a date and place for the 150 students to meet, if they felt they needed extra time to understand a subject. 
 With this app, we hope that all the students can find people who are at the same place in their journey quickly and efficiently while supporting each other in their struggles.
 
+
+## Run Locally the Frontend
+
+Clone the project
+
+```bash
+  git clone https://github.com/SchoolOfCode/w9_frontend-project-intercoders.git
+```
+
+Go to the project directory
+
+```bash
+  cd w9_frontend-project-intercoders
+```
+
+Install dependencies
+
+```bash
+  npm i
+```
+
+Start the server
+
+```bash
+  npm start
+```
+
 ## How the APP works (beta version)
 
 1. STUDENTS INPUT.  
