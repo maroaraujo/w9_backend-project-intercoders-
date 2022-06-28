@@ -13,6 +13,8 @@ import announcementRouter from "./routes/announcement.js";
 //unpack json
 app.use(express.json());
 //app.use(cors());
+
+// Cors is being used for the deployment of the database
 const corsOptions = {
   origin: "http://localhost:3000",
   credentials: true, //access-control-allow-credentials:true
@@ -20,7 +22,7 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 
-
+// All the routes available
 app.use("/users", userRouter);
 app.use("/waitinglist", waitingListRouter);
 app.use("/course", courseRouter);
