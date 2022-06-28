@@ -15,4 +15,7 @@ Routes
 
     -> line 34 to 40 -> could you clarify the use of the route?If is not being used, could we remove it? 
     
+    -- Models
+    line 1
+    Why import application if we aren't using it at the moment ?
      

@@ -1,6 +1,7 @@
 import { application } from "express";
 import { query } from "../db/index.js";
 
+//Creating the user on the table of the database
 export async function createUser(body) {
   const queryText = `INSERT INTO users (username, password) 
   VALUES ($1, $2);`;
