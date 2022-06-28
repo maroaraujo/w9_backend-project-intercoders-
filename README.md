@@ -68,6 +68,21 @@ All data would be erased on saturday night, for the next week sessions and for n
  - **Postman API**: This tool was very useful to test the API's routes and the database
  - **Git and GitHub**: Git version control and GitHub branches were used to be able to separate the tasks and could work as a team on the same codebase. 
 
+## Tech Stack
+
+**Client:** React, HTML, CSS, Javascript
+
+**Server:** Node.js, Express, Axios, CORS, Heroku, 
+Postman API
+
+## Running Tests
+
+To run tests, run the following command
+
+```bash
+  npm run test
+```
+
 ## What does this repository contain?
 
 We have the backend of our application in this repository.  
