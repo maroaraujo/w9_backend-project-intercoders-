@@ -109,3 +109,11 @@ Heroku : (https://id.heroku.com/login)
 
 Postman API :  (https://www.postman.com/)
 
+
+## Authors
+
+- [@millagmc](https://github.com/millagmc)
+- [@smurfeda](https://github.com/smurfeda)
+- [@ghavasi](https://github.com/Szfinx5)
+- [@maroaraujo](https://github.com/maroaraujo)
+
