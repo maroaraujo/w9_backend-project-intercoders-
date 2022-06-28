@@ -6,7 +6,6 @@ import {
   deleteUserFromWaitingList,
 } from "../models/models.js";
 
-//import { closeComplete } from "pg-protocol/dist/messages.js";
 
 // Use the router from express
 const router = express.Router();
@@ -32,6 +31,7 @@ router.get("/", async function (req, res) {
 });
 
 // Receive get request of the students by id 
+//it is not being used at the moment but could be useful for login
 router.get("/:id", async function (req, res) {
   const param = req.params.id;
   console.log("waiting list " + param);

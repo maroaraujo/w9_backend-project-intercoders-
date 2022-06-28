@@ -1,5 +1,6 @@
 import { query } from "../index.js";
 
+//
 const sqlQuery = `CREATE TABLE IF NOT EXISTS users(
     id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
     username TEXT,

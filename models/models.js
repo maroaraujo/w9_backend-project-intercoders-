@@ -1,4 +1,3 @@
-import { application } from "express";
 import { query } from "../db/index.js";
 
 //inserting the new user on the table on the database
@@ -13,6 +12,7 @@ export async function createUser(body) {
 
 
 //selecting all the users and its passwords
+//not being used at this version but can be applied for login
 export async function login(body) {
   console.log("before query " + body.username);
   const queryText = `SELECT * FROM users WHERE username = '${body.username}' AND password = '${body.password}'`;

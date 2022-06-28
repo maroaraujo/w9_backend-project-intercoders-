@@ -2,7 +2,6 @@ import express from "express";
 import cors from "cors";
 
 const app = express();
-//const PORT = process.env.port || 3002;
 
 // import routes from route files
 import userRouter from "./routes/users.js";
@@ -12,7 +11,7 @@ import announcementRouter from "./routes/announcement.js";
 
 //unpack json
 app.use(express.json());
-//app.use(cors());
+
 
 // Cors is being used for the deployment of the database
 const corsOptions = {
