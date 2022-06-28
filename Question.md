@@ -18,4 +18,10 @@ Routes
     -- Models
     line 1
     Why import application if we aren't using it at the moment ?
-     
+
+    line 15==> could you clarify where you use that on the data base and why?
+
+    line 57-65 could you clarify where is this filter used? how is that supposed to be used?
+
+   
+

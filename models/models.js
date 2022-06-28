@@ -1,7 +1,7 @@
 import { application } from "express";
 import { query } from "../db/index.js";
 
-//Creating the user on the table of the database
+//inserting the new user on the table on the database
 export async function createUser(body) {
   const queryText = `INSERT INTO users (username, password) 
   VALUES ($1, $2);`;
@@ -11,6 +11,8 @@ export async function createUser(body) {
   return rows;
 }
 
+
+//selecting all the users and its passwords
 export async function login(body) {
   console.log("before query " + body.username);
   const queryText = `SELECT * FROM users WHERE username = '${body.username}' AND password = '${body.password}'`;
@@ -20,6 +22,7 @@ export async function login(body) {
   return rows;
 }
 
+//select everyhing on the users table
 export async function getUsers() {
   console.log("b4 await");
   const response = await query("SELECT * FROM users;");
@@ -28,6 +31,7 @@ export async function getUsers() {
   return display;
 }
 
+//When adding a user, undefined don't go to the database, if not undefined the database insert the user and the key course
 export async function addToList(body) {
   console.log("body ", body.studentname);
   if (body.studentname === undefined || body.keycourse === undefined) {
@@ -40,7 +44,7 @@ export async function addToList(body) {
     return rows;
   }
 }
-
+//selects all the values on the waitinglist table
 export async function getWaitingList() {
   console.log("b4 await");
   const response = await query("SELECT * FROM waitinglist;");
@@ -49,6 +53,7 @@ export async function getWaitingList() {
   return display;
 }
 
+//selects all the values on the waitinglist table which matches the key paramets
 export async function getWaitingListByCourse(param) {
   console.log("b4 await");
   const response = await query(
@@ -59,15 +64,18 @@ export async function getWaitingListByCourse(param) {
   return display;
 }
 
+//Insert values in the course table that was created in the frontend
+//--Not being used at the moment since the adding new topic feature wasn't created
 export async function addToCourse(body) {
   const queryText = `INSERT INTO course (keycourse) 
   VALUES ($1);`;
   const rows = await query(queryText, [body.keycourse]);
-
   console.log("rows" + rows);
   return rows;
 }
 
+//select all the information present in the course table
+//Not being used since this feature wasn't created yet.
 export async function getCourse() {
   console.log("b4 await");
   const response = await query("SELECT * FROM course;");
@@ -76,6 +84,7 @@ export async function getCourse() {
   return display;
 }
 
+//This function selects all the information present inside the announcement table
 export async function getAnnouncement() {
   console.log("b4 await");
   const response = await query("SELECT * FROM announcement;");
@@ -83,6 +92,7 @@ export async function getAnnouncement() {
   const display = response.rows;
   return display;
 }
+
 
 export async function addToAnnouncement(body) {
   const queryText = `INSERT INTO announcement (id, keycourse, volunteername, date, time ) 
