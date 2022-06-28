@@ -93,7 +93,7 @@ export async function getAnnouncement() {
   return display;
 }
 
-
+// Adding volunteer, course and date information into announcement table
 export async function addToAnnouncement(body) {
   const queryText = `INSERT INTO announcement (id, keycourse, volunteername, date, time ) 
   VALUES ($1, $2, $3, $4, $5);`;
@@ -104,11 +104,11 @@ export async function addToAnnouncement(body) {
     body.date,
     body.time,
   ]);
-
   console.log("rows" + rows);
   return rows;
 }
 
+//We delete the student from the wailiting list
 export async function deleteUserFromWaitingList(body) {
   console.log("b4 await");
   const response = await query(
