@@ -40,6 +40,10 @@ The meetings will take place on the Main Zoom Channel rooms (if the permission i
 
 https://vimeo.com/user68457418
 
+## Frontend Screenshots
+
+![App Screenshot](../w9_backend-project-intercoders/img/Frontend screenshot.png)
+
 ## Tech Stack
 
 **Client:** React, HTML, CSS, Javascript
