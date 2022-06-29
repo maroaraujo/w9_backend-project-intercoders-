@@ -19,16 +19,16 @@ School of Code students can choose the subject they would like to revise and reg
 When students visit the website, they can easily see who is interested in a specific subject and who might be available to offer some help on that specific subject. If there are no volunteers to help, the students still can communicate their learning needs with their peers who are interested in the same subject and arrange an agreeable time and date that suits them. 
 
 1. STUDENTS INPUT.  
-Students put their names on the subject they want to recap.
+Students put their names in the input field for the subject they would like to recap.
 
 2. LIST OF STUDENTS.  
-All students can see who have the same subject interest, and can either contact each other (on slack) or organise a session with the info that everyone can see. Afterwards they can decide to participate in a session. 
+All students can see who have the same subject interest, and can either contact each other (on slack) or organise a session with the info that everyone can see. Afterwards they can decide to participate in a preferred session. 
 
 3. VOLUNTEERS INPUT.  
-Students can volunteer themselves to organise a session to help clarify or discuss a subject. They can put their names and their available days down. 
+Students can volunteer to organise a session to help clarify a subject that they feel they have a better understanding of. They can put their names in the input field next to their preffered subject and chose their available days on the dropdown menu. 
 
 4. SESSIONS ANNOUNCEMENTS.  
-Once the volunteer submits, a card is going to appear on the announcement board.
+Once the volunteer submits, a card will appear on the announcement board.
 
 5. ALL THE DATA WOULD ERASE.   
 All the data would be erased on Saturday night ready for the next week's sessions.
