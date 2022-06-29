@@ -19,108 +19,38 @@ School of Code students can choose the subject they would like to revise and reg
 When students visit the website, they can easily see who is interested in a specific subject and who might be available to offer some help on that specific subject. If there are no volunteers to help, the students still can communicate their learning needs with their peers who are interested in the same subject and arrange an agreeable time and date that suits them. 
 
 1. STUDENTS INPUT.  
-Students put their names on the subject they want to recap
+Students put their names in the input field for the subject they would like to recap.
 
 2. LIST OF STUDENTS.  
-All students can see who have the same subject interest, and can either contact each other (on slack) or organise a session which everyone could see it and participate. 
+All students can see who have the same subject interest, and can either contact each other (on slack) or organise a session with the info that everyone can see. Afterwards they can decide to participate in a preferred session. 
 
 3. VOLUNTEERS INPUT.  
-Students can volunteer themselves to organise a session to help or discuss a subject, they put the names and their available days. 
+Students can volunteer to organise a session to help clarify a subject that they feel they have a better understanding of. They can put their names in the input field next to their preffered subject and chose their available days on the dropdown menu. 
 
 4. SESSIONS ANNOUNCEMENTS.  
-Once the volunteer submit, a card is going to appears on the announcement board
+Once the volunteer submits, a card will appear on the announcement board.
 
+<<<<<<< HEAD
 5. ALL THE DATA WOULD BE DELETED ON SATURDAY NIGHT.   
 All data would be erased on saturday night, for the next week sessions and for new students list.
+=======
+5. ALL THE DATA WOULD BE ERASED.   
+All the data would be erased on Saturday night ready for the next week's sessions.
+>>>>>>> 2bcffb5fee6ee40eebdd92df2dce11da2e678580
 
 ### Where and when will the meetings take place?
 The meetings will take place on the Main Zoom Channel rooms (if the permission is granted by the school) or individually arranged Google Meet Rooms. The meeting times will always be after School of Code, starting at 17:30 and the days include every weekday apart from Wednesdays. The pupils will be always more than welcome to arrange their own meeting times and spaces as well.
 
-## Demo
 
-https://vimeo.com/user68457418
-
+<<<<<<< HEAD
 ## Frontend Screenshots
 
 ![App Screenshot](../w9_backend-project-intercoders/img/Frontend screenshot.png)
 
 ## Tech Stack
-
-**Client:** React, HTML, CSS, Javascript
-
-**Server:** Node.js, Express, Axios, CORS, Heroku, 
-Postman API
-
-## How Technologies and libraries were used in this repository:
-
- - **React.js**: The main library we used for the front end application
- - **Node.js**: We used the Node.JS runtime environment for the backend
- - **Express**: We used Express framwework to build the Node web application
- - **Axios**: This library helped us to establish the communication between the frontend and backend
- - **CORS**: We used it to permit loading resources when the origin of the request was different than the destination.
- - **Heroku**: Heroku is hosting our PostgreSQL database and the API of our application.
- - **Postman API**: This tool was very useful to test the API's routes and the database
- - **Git and GitHub**: Git version control and GitHub branches were used to be able to separate the tasks and could work as a team on the same codebase. 
-
-
-## Running Tests
-
-To run tests, run the following command
-
-```bash
-  npm run test
-```
-
-## What does this repository contain?
-
-We have the backend of our application in this repository.  
-
- - **Main** branh is an up-to-date version of the code.
- - **heroku** branch is a deployed branch of the API
- - **backend and sanitizing** temporary branches were used during the active development of different functions. When the main development was finished and the tests were passed, it was merged to the main branch.
- - **version1**: This branch was intended as a temporary location of a working API which still used the previous database structure.
-
-## API Routes
-The APIs aim to adhere to RESTful best practices. Here are the routes currently implemented. The API is currently hosted on Heroku.    
-Live demo is available: https://intercoders.herokuapp.com/
-
-| Method | Path | Role | Expected props | Response |
-|---|---|---|---|--|
-| GET	| /waitinglist | Every students on the waiting list |  | {success: boolean, payload: [{id, studentname, keycourse}]} | 
-| GET	| /waitinglist/'course' | Every student per course on the waiting list | {course} as :id | {success: boolean, payload: [{id, studentname, course}]} |
-| POST | /waitinglist | Post a new student to the waiting list | {studentname, keycourse}	| {success: boolean, payload: string} |
-| DELETE | /waitinglist |	Delete student from the waiting list | {studentname, keycourse}	| {success: boolean, payload: string}	|
-| GET |	/announcement |	List every announcement | |  {success: boolean, payload: [{index, id, keycourse, volunteername, date, time}]} |
-| POST |	/announcement |	Create a new announcement | {id, keycourse, volunteername, date, time}	| {success: boolean, payload: string}|
-| DELETE |	/announcement |	Delete an announcement | {keycourse, volunteername, date}	| {success: boolean, payload: string}|
-| GET	| /course |	List every courses | | {success: boolean, payload: [{id, course}]} |
-| POST | /course | Create a new course category | {course}	| {success: boolean,   payload: string} |	
-| POST | /users/login | Login for users | {username, pqssword}	| {success: boolean, payload: [{id, username, course}]} |
-| POST | /users/register | Registering a new student | {username, password}	| {success: boolean, payload: [{id, username, course}]} |
-
-
-Available Documentation for Setting Up 
----
-React.js : ( https://reactjs.org/docs/create-a-new-react-app.html )
-
-Node.js :  ( https://nodejs.org/en/ )
-          ( https://nodejs.org/en/docs/guides/getting-started-guide/ )
-
-PostgreSQL : (https://www.postgresql.org/)
-
-Heroku : (https://id.heroku.com/login)
-
-Postman API :  (https://www.postman.com/)
-
-
-## Authors
-
-- [@millagmc](https://github.com/millagmc)
-- [@smurfeda](https://github.com/smurfeda)
-- [@ghavasi](https://github.com/Szfinx5)
-- [@maroaraujo](https://github.com/maroaraujo)
-
+=======
 ## Run Locally the Frontend
+>>>>>>> 2bcffb5fee6ee40eebdd92df2dce11da2e678580
 
 Clone the project
 
@@ -147,6 +77,86 @@ Start the server
 ```
 
 
+## Demo
+
+https://vimeo.com/725201751
+
+
+## APP Screenshots
+
+![App Screenshot](https://i.ibb.co/yhm8wLy/App-screeshot.png)
+
+## Running Tests
+
+To run tests, run the following command
+
+```bash
+  npm run test
+```
+ 
+## API Routes
+The APIs aim to adhere to RESTful best practices. Here are the routes currently implemented. The API is currently hosted on Heroku.    
+Live demo is available: https://intercoders.herokuapp.com/
+
+* As we are using the free version of Heroku, from time to time the credentials might be changed on the server. If this is the case, please feel free to contact one of the authors and we would be more than happy to update them.
+
+| Method | Path | Role | Expected props | Response |
+|---|---|---|---|--|
+| GET	| /waitinglist | Every students on the waiting list |  | {success: boolean, payload: [{id, studentname, keycourse}]} | 
+| GET	| /waitinglist/'course' | Every student per course on the waiting list | {course} as :id | {success: boolean, payload: [{id, studentname, course}]} |
+| POST | /waitinglist | Post a new student to the waiting list | {studentname, keycourse}	| {success: boolean, payload: string} |
+| DELETE | /waitinglist |	Delete student from the waiting list | {studentname, keycourse}	| {success: boolean, payload: string}	|
+| GET |	/announcement |	List every announcement | |  {success: boolean, payload: [{index, id, keycourse, volunteername, date, time}]} |
+| POST |	/announcement |	Create a new announcement | {id, keycourse, volunteername, date, time}	| {success: boolean, payload: string}|
+| DELETE |	/announcement |	Delete an announcement | {keycourse, volunteername, date}	| {success: boolean, payload: string}|
+| GET	| /course |	List every courses | | {success: boolean, payload: [{id, course}]} |
+| POST | /course | Create a new course category | {course}	| {success: boolean,   payload: string} |	
+| POST | /users/login | Login for users | {username, pqssword}	| {success: boolean, payload: [{id, username, course}]} |
+| POST | /users/register | Registering a new student | {username, password}	| {success: boolean, payload: [{id, username, course}]} |
+
+## Tech Stack
+
+**Client:** React, HTML, CSS, Javascript
+
+**Server:** Node.js, Express, Axios, CORS, Heroku, 
+Postman API
+
+## How Technologies and libraries were used in this repository:
+
+ - **React.js**: The main library we used for the front end application
+ - **Node.js**: We used the Node.JS runtime environment for the backend
+ - **Express**: We used Express framwework to build the Node web application
+ - **Axios**: This library helped us to establish the communication between the frontend and backend
+ - **CORS**: We used it to permit loading resources when the origin of the request was different than the destination.
+ - **Heroku**: Heroku is hosting our PostgreSQL database and the API of our application.
+ - **Postman API**: This tool was very useful to test the API's routes and the database
+ - **Git and GitHub**: Git version control and GitHub branches were used to be able to separate the tasks and could work as a team on the same codebase. 
+
+
+Available Documentation for Setting Up 
+---
+React.js : ( https://reactjs.org/docs/create-a-new-react-app.html )
+
+Node.js :  ( https://nodejs.org/en/ )
+          ( https://nodejs.org/en/docs/guides/getting-started-guide/ )
+
+PostgreSQL : (https://www.postgresql.org/)
+
+Heroku : (https://id.heroku.com/login)
+
+Postman API :  (https://www.postman.com/)
+
+
+## Authors
+
+- [@millagmc](https://github.com/millagmc)
+- [@smurfeda](https://github.com/smurfeda)
+- [@ghavasi](https://github.com/Szfinx5)
+- [@maroaraujo](https://github.com/maroaraujo)
+
+
+
+
  Lessons Learned:
 --
 What did you learn while building this project?
@@ -163,6 +173,17 @@ What challenges did you face and how did you overcome them?
 would talk more about it and fix the remain issues.
 
 2. We had a hard time with the variables as well, so we set a time to plan them and make them more semantic.
+
+## Strech Goals
+
+- REGISTRATION AND LOGIN.  
+For the next versions we would like to add a registration and login on the landing page.
+
+- STUDENTS ADD DIFFERENT SUBJECTS / TOPICS.  
+On this feature the students will be able to add new subjects, instead of just the predetermined ones. 
+
+- RESOURCES AND LINKS ORGANIZED IN A DASHBOARD.  
+On the side of the code club, we would like to add a dashboard where the students can put links for studies divided by topics.
 
 Repositories
 -- 
