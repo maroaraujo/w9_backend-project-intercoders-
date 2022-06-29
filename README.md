@@ -30,7 +30,7 @@ Students can volunteer to organise a session to help clarify a subject that they
 4. SESSIONS ANNOUNCEMENTS.  
 Once the volunteer submits, a card will appear on the announcement board.
 
-5. ALL THE DATA WOULD ERASE.   
+5. ALL THE DATA WOULD BE ERASED.   
 All the data would be erased on Saturday night ready for the next week's sessions.
 
 ### Where and when will the meetings take place?
