@@ -30,7 +30,7 @@ Students can volunteer themselves to organise a session to help or discuss a sub
 4. SESSIONS ANNOUNCEMENTS.  
 Once the volunteer submit, a card is going to appears on the announcement board
 
-5. ALL THE DATA WOULD.   
+5. ALL THE DATA WOULD BE DELETED ON SATURDAY NIGHT.   
 All data would be erased on saturday night, for the next week sessions and for new students list.
 
 ### Where and when will the meetings take place?
@@ -39,6 +39,10 @@ The meetings will take place on the Main Zoom Channel rooms (if the permission i
 ## Demo
 
 https://vimeo.com/user68457418
+
+## Frontend Screenshots
+
+![App Screenshot](../w9_backend-project-intercoders/img/Frontend screenshot.png)
 
 ## Tech Stack
 
