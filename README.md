@@ -155,10 +155,10 @@ What did you learn while building this project?
 
 What challenges did you face and how did you overcome them?
 
-We had a hard time to connect the front end with the back end and we overcome that by setting a time where both parts involved
+1. We had a hard time to connect the front end with the back end and we overcome that by setting a time where both parts involved
 would talk more about it and fix the remain issues.
 
-We had a hard time with the variables as well, so we set a time to plan them and make them more semantic.
+2. We had a hard time with the variables as well, so we set a time to plan them and make them more semantic.
 
 Repositories
 -- 
