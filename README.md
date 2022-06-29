@@ -59,3 +59,8 @@ https://github.com/SchoolOfCode/w9_frontend-project-intercoders
 
 Back-End:
 https://github.com/SchoolOfCode/w9_backend-project-intercoders
+
+Branches Explanation
+--
+
+We used the branches whenever we want to implement a new feature. for example Heroku Branch was the one used when we wanted to deploy our backend in the cloud. So we used the name of the provider before we merge in the main. Most of those branches does not exist anymore since they were merged with the main for the final project
