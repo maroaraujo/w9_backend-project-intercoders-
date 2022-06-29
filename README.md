@@ -99,13 +99,6 @@ To run tests, run the following command
 ```bash
   npm run test
 ```
-
-## What does this repository contain?
-
-We have the backend of our application in this repository.  
-
- - **Main** branch is an up-to-date version of the code.
- - **heroku** branch is backup branch of the deployed branch of the API
  
 
 ## API Routes
