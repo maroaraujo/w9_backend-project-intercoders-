@@ -36,6 +36,34 @@ All the data would be erased on Saturday night ready for the next week's session
 ### Where and when will the meetings take place?
 The meetings will take place on the Main Zoom Channel rooms (if the permission is granted by the school) or individually arranged Google Meet Rooms. The meeting times will always be after School of Code, starting at 17:30 and the days include every weekday apart from Wednesdays. The pupils will be always more than welcome to arrange their own meeting times and spaces as well.
 
+
+## Run Locally the Frontend
+
+Clone the project
+
+```bash
+  git clone https://github.com/SchoolOfCode/w9_frontend-project-intercoders.git
+```
+
+Go to the project directory
+
+```bash
+  cd w9_frontend-project-intercoders
+```
+
+Install dependencies
+
+```bash
+  npm i
+```
+
+Start the server
+
+```bash
+  npm start
+```
+
+
 ## Demo
 
 https://vimeo.com/user68457418
@@ -123,31 +151,7 @@ Postman API :  (https://www.postman.com/)
 - [@ghavasi](https://github.com/Szfinx5)
 - [@maroaraujo](https://github.com/maroaraujo)
 
-## Run Locally the Frontend
 
-Clone the project
-
-```bash
-  git clone https://github.com/SchoolOfCode/w9_frontend-project-intercoders.git
-```
-
-Go to the project directory
-
-```bash
-  cd w9_frontend-project-intercoders
-```
-
-Install dependencies
-
-```bash
-  npm i
-```
-
-Start the server
-
-```bash
-  npm start
-```
 
 
  Lessons Learned:
