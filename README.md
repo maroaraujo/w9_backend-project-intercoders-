@@ -80,6 +80,8 @@ We have the backend of our application in this repository.
 The APIs aim to adhere to RESTful best practices. Here are the routes currently implemented. The API is currently hosted on Heroku.    
 Live demo is available: https://intercoders.herokuapp.com/
 
+* As we are using the free version of Heroku, from time to time the credentials might be changed on the server. If this is the case, please feel free to contact one of the authors and we would be more than happy to update them.
+
 | Method | Path | Role | Expected props | Response |
 |---|---|---|---|--|
 | GET	| /waitinglist | Every students on the waiting list |  | {success: boolean, payload: [{id, studentname, keycourse}]} | 
