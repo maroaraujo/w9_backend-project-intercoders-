@@ -1,17 +1,15 @@
 import express from "express";
-import {getAnnouncement, addToAnnouncement } from "../models/models.js";
-
-// Using router from express
-const router = express.Router();
-router.use(express.json());
-
-// Receive post request for new announcements
 import {
   getAnnouncement,
   addToAnnouncement,
   deleteUserFromAnnouncement,
 } from "../models/models.js";
 
+// Using router from express
+const router = express.Router();
+router.use(express.json());
+
+// Receive post request for new announcements
 router.post("/", async function (req, res) {
   const body = req.body;
   console.log(body);
