@@ -167,6 +167,17 @@ would talk more about it and fix the remain issues.
 
 2. We had a hard time with the variables as well, so we set a time to plan them and make them more semantic.
 
+## Strech Goals
+--
+- REGISTRATION AND LOGIN
+For the next versions we would like to add a registration and login on the landing page.
+
+- STUDENTS ADD DIFFERENT SUBJECTS / TOPICS
+On this feature the students will be able to add new subjects, instead of just the predetermined ones. 
+
+- RESOURCES AND LINKS ORGANIZED IN A DASHBOARD
+On the side of the code club, we would like to add a dashboard where the students can put links for studies divided by topics.
+
 Repositories
 -- 
 Front-End:
