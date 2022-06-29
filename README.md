@@ -104,10 +104,9 @@ To run tests, run the following command
 
 We have the backend of our application in this repository.  
 
- - **Main** branh is an up-to-date version of the code.
- - **heroku** branch is a deployed branch of the API
- - **backend and sanitizing** temporary branches were used during the active development of different functions. When the main development was finished and the tests were passed, it was merged to the main branch.
- - **version1**: This branch was intended as a temporary location of a working API which still used the previous database structure.
+ - **Main** branch is an up-to-date version of the code.
+ - **heroku** branch is backup branch of the deployed branch of the API
+ 
 
 ## API Routes
 The APIs aim to adhere to RESTful best practices. Here are the routes currently implemented. The API is currently hosted on Heroku.    
