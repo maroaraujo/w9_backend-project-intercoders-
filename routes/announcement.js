@@ -1,7 +1,11 @@
 import express from "express";
+import {getAnnouncement, addToAnnouncement } from "../models/models.js";
+
+// Using router from express
 const router = express.Router();
 router.use(express.json());
 
+// Receive post request for new announcements
 import {
   getAnnouncement,
   addToAnnouncement,
@@ -16,6 +20,7 @@ router.post("/", async function (req, res) {
   res.json({ success: true, payload: "The new volunteer was added" });
 });
 
+// Receive get request of all the announcements
 router.get("/", async function (req, res) {
   console.log(req.query.search);
   const result = await getAnnouncement();
