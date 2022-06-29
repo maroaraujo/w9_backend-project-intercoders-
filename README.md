@@ -37,32 +37,6 @@ All data would be erased on saturday night, for the next week sessions and for n
 The meetings will take place on the Main Zoom Channel rooms (if the permission is granted by the school) or individually arranged Google Meet Rooms. The meeting times will always be after School of Code, starting at 17:30 and the days include every weekday apart from Wednesdays. The pupils will be always more than welcome to arrange their own meeting times and spaces as well.
 
 
-## Run Locally the Frontend
-
-Clone the project
-
-```bash
-  git clone https://github.com/SchoolOfCode/w9_frontend-project-intercoders.git
-```
-
-Go to the project directory
-
-```bash
-  cd w9_frontend-project-intercoders
-```
-
-Install dependencies
-
-```bash
-  npm i
-```
-
-Start the server
-
-```bash
-  npm start
-```
-
 ## Tech Stack
 
 **Client:** React, HTML, CSS, Javascript
@@ -96,11 +70,11 @@ We have the backend of our application in this repository.
 
  - **Main** branh is an up-to-date version of the code.
  - **heroku** branch is a deployed branch of the API
- - **backend and sanitizing** branches are a temporary branches used during the active development of different fonctions. When the main development was finished and the tests were passed, it was merged to the main branch.
+ - **backend and sanitizing** temporary branches were used during the active development of different functions. When the main development was finished and the tests were passed, it was merged to the main branch.
  - **version1**: This branch was intended as a temporary location of a working API which still used the previous database structure.
 
 ## API Routes
-The APIs aim to adhere to RESTful best practice. Here are the routes currently implemented. The API is currently hosted on Heroku.    
+The APIs aim to adhere to RESTful best practices. Here are the routes currently implemented. The API is currently hosted on Heroku.    
 Live demo is available: https://intercoders.herokuapp.com/
 
 | Method | Path | Role | Expected props | Response |
@@ -138,4 +112,31 @@ Postman API :  (https://www.postman.com/)
 - [@smurfeda](https://github.com/smurfeda)
 - [@ghavasi](https://github.com/Szfinx5)
 - [@maroaraujo](https://github.com/maroaraujo)
+
+## Run Locally the Frontend
+
+Clone the project
+
+```bash
+  git clone https://github.com/SchoolOfCode/w9_frontend-project-intercoders.git
+```
+
+Go to the project directory
+
+```bash
+  cd w9_frontend-project-intercoders
+```
+
+Install dependencies
+
+```bash
+  npm i
+```
+
+Start the server
+
+```bash
+  npm start
+```
+
 
