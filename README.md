@@ -51,3 +51,4 @@ We had a hard time to connect the front end with the back end and we overcome th
 would talk more about it and fix the remain issues.
 
 We had a hard time with the variables as well, so we set a time to plan them and make them more semantic.
+
