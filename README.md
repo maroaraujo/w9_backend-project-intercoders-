@@ -139,4 +139,46 @@ Start the server
   npm start
 ```
 
+Lessons Learned:
+--
+What did you learn while building this project?
+
+1. The first lesson learned was about the communication throught the project, we were not communicating as much as needed on the first day and that set us back a few times when we were both doing the same thing again.
+
+2. Second Lesson would be about how important it is to understand react tree components and how the props are passed from parents to children. We struglled to pass the props a few times in our project and that hold our progression back.
+
+3. How to filter the information on the backend is really important so we don't need to do it on thr frontend
+
+What challenges did you face and how did you overcome them?
+
+We had a hard time to connect the front end with the back end and we overcome that by setting a time where both parts involved
+would talk more about it and fix the remain issues.
+
+We had a hard time with the variables as well, so we set a time to plan them and make them more semantic.
+
+Repositories
+-- 
+Front-End:
+https://github.com/SchoolOfCode/w9_frontend-project-intercoders
+
+Back-End:
+https://github.com/SchoolOfCode/w9_backend-project-intercoders
+
+Branches Explanation
+--
+
+We used the branches whenever we want to implement a new feature. for example Heroku Branch was the one used when we wanted to deploy our backend in the cloud. So we used the name of the provider before we merge in the main. Most of those branches does not exist anymore since they were merged with the main for the final project
+
+License
+-- 
+
+Copyright (c) 2022 InterCoders
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
 
