@@ -38,3 +38,5 @@ app.get("/", function (req, res) {
 app.listen(process.env.PORT || 3001, function () {
   console.log(`Server is running`);
 });
+
+export default app;

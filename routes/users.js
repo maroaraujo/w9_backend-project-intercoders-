@@ -14,7 +14,7 @@ router.post("/register", async function (req, res) {
   console.log(body);
   console.log("above is body");
   let data = await createUser(body);
-  res.json({ success: true, payload: "The new customer was added" });
+  res.json({ success: true, payload: "The new user was added" });
 });
 
 // Receive post request for the user login input
@@ -29,13 +29,6 @@ router.post("/login", async function (req, res) {
 // Receive get request and check any matchings users on the database
 router.get("/", async function (req, res) {
   console.log(req.query.search);
-  if (req.query.search !== undefined) {
-    console.log("in if");
-    console.log(req.query.search);
-    const result = await getCustomerSearch(req.query.search);
-    res.json({ success: true, payload: result });
-    return;
-  }
   const result = await getUsers();
   res.json({ success: true, payload: result });
 });
