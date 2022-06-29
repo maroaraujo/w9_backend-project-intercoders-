@@ -52,3 +52,10 @@ would talk more about it and fix the remain issues.
 
 We had a hard time with the variables as well, so we set a time to plan them and make them more semantic.
 
+Repositories
+-- 
+Front-End:
+https://github.com/SchoolOfCode/w9_frontend-project-intercoders
+
+Back-End:
+https://github.com/SchoolOfCode/w9_backend-project-intercoders
