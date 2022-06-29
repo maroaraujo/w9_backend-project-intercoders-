@@ -43,7 +43,7 @@ https://vimeo.com/user68457418
 
 ## APP Screenshots
 
-![App Screenshot]([https://ibb.co/k9mFMfJ](https://i.ibb.co/Jy3PC4q/Frontend-screenshot.png))
+![App Screenshot](https://i.ibb.co/Jy3PC4q/Frontend-screenshot.png)
 
 ## Tech Stack
 
