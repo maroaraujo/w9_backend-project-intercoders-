@@ -138,7 +138,7 @@ Install dependencies
 
 Start the server
 
-````bash
+```bash
   npm start
 ```
 
