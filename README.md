@@ -39,15 +39,8 @@ All data would be erased on saturday night, for the next week sessions and for n
 The meetings will take place on the Main Zoom Channel rooms (if the permission is granted by the school) or individually arranged Google Meet Rooms. The meeting times will always be after School of Code, starting at 17:30 and the days include every weekday apart from Wednesdays. The pupils will be always more than welcome to arrange their own meeting times and spaces as well.
 
 
-<<<<<<< HEAD
-## Frontend Screenshots
-
-![App Screenshot](../w9_backend-project-intercoders/img/Frontend screenshot.png)
-
-## Tech Stack
-=======
 ## Run Locally the Frontend
->>>>>>> 2bcffb5fee6ee40eebdd92df2dce11da2e678580
+
 
 Clone the project
 
