@@ -15,7 +15,7 @@ app.use(express.json());
 
 // Cors is being used for the deployment of the database
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: "*",
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 };
